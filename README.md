@@ -1,5 +1,5 @@
 # Live Snake Game
-I've create for code practice and learning.
+A (keep it) simple & stupid game I have create for code practice and learning.
 
 ```sh
 npm install
