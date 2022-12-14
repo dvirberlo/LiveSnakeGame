@@ -30,8 +30,8 @@ var Gspan = document.getElementById("Gspan");
 var listT = document.getElementById("listT");
 var canvas = document.getElementById('SNAKE');
 
-if(/[?&]local/.test(location.search))var ws = new WebSocket('ws://localhost:5000/game');
-else var ws = new WebSocket('wss://db-websocket.herokuapp.com/game');
+const url = (new URL(window.location.href)).searchParams.get('ws') ?? `wss://${window.location.host}/game`;
+else var ws = new WebSocket(url);
 
 var interval;
 var snakes = [];
