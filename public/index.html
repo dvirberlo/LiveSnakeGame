@@ -31,7 +31,7 @@ var listT = document.getElementById("listT");
 var canvas = document.getElementById('SNAKE');
 
 const url = (new URL(window.location.href)).searchParams.get('ws') ?? `wss://${window.location.host}/game`;
-else var ws = new WebSocket(url);
+var ws = new WebSocket(url);
 
 var interval;
 var snakes = [];
